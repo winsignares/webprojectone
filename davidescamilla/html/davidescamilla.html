@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/davidescamilla/css/style.css" />
+    <title>Portafolio - David Escamilla</title>
+</head>
+<body>
+
+    <header>
+        <h1>Portafolio David Escamilla<h1>
+    </header>
+
+    
+    <main class="content">
+
+        
+        <section class="left-column">
+            <img src="/davidescamilla/img/david-yo.jpg"  alt="Foto de David Escamilla" height="200" />
+            <p>
+                Me llamo David Eduardo Escamilla Galezo, tengo 18 años y estudio en la Universidad Libre en cuarto semestre de Ingeniería de Sistemas.
+                Poseo sólidos conocimientos en programación y resolución de problemas con experiencia en lenguajes como Python, Java y C++,
+                así como en el uso de herramientas de control de versiones como Git.
+                Con habilidades en estructuras de datos, algoritmos y programación orientada a objetos.
+                Busco seguir desarrollando mis competencias técnicas y participar en proyectos que me permitan aplicar mis conocimientos
+                en entornos de desarrollo reales.
+            </p>
+        </section>
+
+      
+        <aside class="right-column">
+            <section class="skills">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Inglés</li>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                    <li>SQL</li>
+                    <li>Git Hub</li>
+                    <li>Bases de datos</li>
+                    <li>Python</li>
+                    <li>React</li>
+                    
+                </ul>
+            </section>
+
+            <section class="contact-form">
+                <h3>Más información</h3>
+                <p>Escríbeme aquí:</p>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Nombre" />
+                    <input type="email" id="email" placeholder="Correo electrónico" />
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </aside>
+    </main>
+
+  
+    <footer>
+        <p><strong>Contacto:</strong></p>
+        <p>Teléfono: 3022163398</p>
+    </footer>
+
+   
+    <script>
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', function(event) {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+
+            if (!name || !email) {
+                alert('Por favor, completa todos los campos.');
+                event.preventDefault();
+            } else {
+                alert('¡Formulario enviado correctamente!');
+            }
+        });
+    </script>
+</body>
+</html>
