@@ -10,9 +10,9 @@
 body {
     font-family: 'Roboto', sans-serif; /* Fuente limpia para el cuerpo */
     /* Fondo claro con patrón sutil */
-    background-color: #949494;
+    background-color: #dadada;
     
-    color: var(--unilibre-black);
+
 }
 
 /* Tipografía elegante para todos los títulos */
