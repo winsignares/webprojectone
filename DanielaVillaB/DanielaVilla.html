@@ -1,12 +1,420 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portafolio - Daniela Isabel Villa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <h1>Los gatos son lindos</h1>
-    <p>miau</p>
+    <!-- Textos decorativos -->
+    <div class="decorative-text about-me">SOBRE MI</div>
+    <div class="decorative-text experience-text">¿CUÁL ES MI EXPERIENCIA?</div>
+    <div class="decorative-text profession-text">¿QUÉ PROFESIÓN TENGO?</div>
+    <div class="decorative-text skills-text">¿QUÉ HABILIDADES HE ADQUIRIDO?</div>
+
+    <div class="container py-5">
+        <!-- Título principal -->
+        <div class="row">
+            <div class="col-12">
+                <h1 class="main-title">Portafolio</h1>
+                <div class="subtitle">INGENIERÍA DE SISTEMAS</div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Columna izquierda -->
+            <div class="col-lg-6">
+                <!-- Perfil -->
+                <div class="paper-card">
+                    <h2 class="section-title">Perfil</h2>
+                    <div class="text-center">
+                        <img src="icon.jpeg" class="profile-img" alt="Foto de Perfil">
+                    </div>
+                    <div class="mt-3">
+                        <h5 style="font-style: italic; margin-bottom: 5px;">Daniela Isabel Villa Bastidas</h5>
+                        <p style="color: #666; margin-bottom: 15px;">(ella)</p>
+                        
+                        <p><strong>Fecha de nacimiento:</strong> 17.06.2005</p>
+                        <p><strong>Nacionalidad:</strong> Buenaventura, Colombia</p>
+                        <p><strong>Grado:</strong> Ingeniería de Sistemas (6º semestre)</p>
+                        
+                        <div class="row mt-3">
+                            <div class="col-8">
+                                <p style="font-size: 0.9rem;"><strong>📞</strong> +57 3147304855</p>
+                                <p style="font-size: 0.9rem;"><strong>✉️</strong> dannstudy@outlook.com</p>
+                                <p style="font-size: 0.9rem;"><strong>🌐</strong> github.com/DANN-MAGE</p>
+                            </div>
+                            <div class="col-4 text-end">
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://github.com/DANN-MAGE&size=80x80" alt="Código QR" class="qr-code">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Educación -->
+                <div class="paper-card">
+                    <h2 class="section-title">Educación</h2>
+                    <div class="mb-3">
+                        <table class="table table-borderless" style="font-size: 0.9rem;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 30px;"><strong>01</strong></td>
+                                    <td><strong>Universidad Libre</strong></td>
+                                    <td class="text-end">2023-presente</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>02</strong></td>
+                                    <td><strong>Curso AWS Machine Learning</strong></td>
+                                    <td class="text-end">2025</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>03</strong></td>
+                                    <td><strong>Curso Python - Cisco</strong></td>
+                                    <td class="text-end">2024</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h6><strong>RESUMEN</strong></h6>
+                        <p style="font-size: 0.85rem; line-height: 1.4;">
+                            Estudiante de Ingeniería de Sistemas en sexto semestre. Apasionada por el desarrollo de software, la inteligencia artificial y la inclusión tecnológica. Actualmente trabajo en proyectos de IA para mejorar la accesibilidad laboral.
+                        </p>
+                    </div>
+                    
+                    <div class="barcode"></div>
+                </div>
+            </div>
+
+            <!-- Columna derecha -->
+            <div class="col-lg-6">
+                <!-- Experiencia -->
+                <div class="paper-card">
+                    <h2 class="section-title">Experiencia Laboral</h2>
+                    <table class="table table-borderless" style="font-size: 0.9rem;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 30px;"><strong>01</strong></td>
+                                <td><strong><a href="https://github.com/JUNIORRDSR/INKLU-AI" target="_blank" style="color: #0066cc; text-decoration: none;">INKLU-AI</a></strong></td>
+                                <td class="text-end">2025</td>
+                            </tr>
+                            <tr>
+                                <td><strong>02</strong></td>
+                                <td><strong><a href="https://github.com/Curcolor/EIVAI" target="_blank" style="color: #0066cc; text-decoration: none;">EIVAI</a></strong></td>
+                                <td class="text-end">2025</td>
+                            </tr>
+                            <tr>
+                                <td><strong>03</strong></td>
+                                <td><strong><a href="https://github.com/Curcolor/WALLI_WALLET" target="_blank" style="color: #0066cc; text-decoration: none;">WALLI WALLET</a></strong></td>
+                                <td class="text-end">2024</td>
+                            </tr>
+                            <tr>
+                                <td><strong>04</strong></td>
+                                <td><strong><a href="https://github.com/Curcolor/COMMUNITY" target="_blank" style="color: #0066cc; text-decoration: none;">COMMUNITY</a></strong></td>
+                                <td class="text-end">2024</td>
+                            </tr>
+                            <tr>
+                                <td><strong>05</strong></td>
+                                <td><strong>Software colaborativo</strong></td>
+                                <td class="text-end">2024</td>
+                            </tr>
+                            <tr>
+                                <td><strong>06</strong></td>
+                                <td><strong>Desarrollo web</strong></td>
+                                <td class="text-end">2024</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="mt-3">
+                        <p style="text-align: right; font-size: 0.9rem;"><strong>total: 2 años</strong></p>
+                    </div>
+                    
+                    <p style="font-size: 0.85rem; line-height: 1.4;">
+                        Me apasiona el desarrollo de aplicaciones web, la inteligencia artificial, el desarrollo de carteras digitales y plataformas comunitarias. He trabajado en proyectos de inclusión tecnológica y software colaborativo.
+                    </p>
+                    
+                    <p style="font-size: 0.8rem; color: #666;">
+                        since #: XXXXXXX2021
+                    </p>
+                    
+                    <div class="barcode"></div>
+                </div>
+
+                <!-- Línea ondulada decorativa -->
+                <div class="wavy-line"></div>
+
+                <!-- Habilidades -->
+                <div class="paper-card">
+                    <h2 class="section-title">Habilidades Técnicas</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item html">
+                            <strong>HTML5</strong>
+                        </div>
+                        <div class="skill-item css">
+                            <strong>CSS3</strong>
+                        </div>
+                        <div class="skill-item js">
+                            <strong>JavaScript</strong>
+                        </div>
+                        <div class="skill-item python">
+                            <strong>Python</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        body {
+            background: #0a0a0a;
+            background-image: 
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cfilter id='plastic'%3E%3CfeTurbulence baseFrequency='0.02' numOctaves='3' result='turbulence'/%3E%3CfeColorMatrix in='turbulence' type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='discrete' tableValues='0.02 0.01 0.03 0.015 0.025'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23plastic)' fill='%23ffffff'/%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cfilter id='noise'%3E%3CfeTurbulence baseFrequency='0.8' numOctaves='2' result='noise'/%3E%3CfeColorMatrix in='noise' type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='discrete' tableValues='0.01 0.005 0.015'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23noise)' fill='%23ffffff'/%3E%3C/svg%3E"),
+                radial-gradient(ellipse at 20% 30%, rgba(255,255,255,0.01) 0%, transparent 40%),
+                radial-gradient(ellipse at 80% 70%, rgba(255,255,255,0.008) 0%, transparent 50%),
+                linear-gradient(135deg, rgba(255,255,255,0.005) 0%, transparent 60%);
+            background-size: 150px 150px, 300px 300px, 500px 500px, 400px 400px, 100% 100%;
+            background-attachment: fixed;
+            min-height: 100vh;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Cfilter id='texture'%3E%3CfeTurbulence baseFrequency='0.1' numOctaves='1' result='grain'/%3E%3CfeColorMatrix in='grain' type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='discrete' tableValues='0.008 0.004 0.012'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='60' height='60' filter='url(%23texture)' fill='%23ffffff'/%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M5 5 Q20 2 35 5 Q38 20 35 35 Q20 38 5 35 Q2 20 5 5' fill='none' stroke='rgba(255,255,255,0.003)' stroke-width='0.2'/%3E%3C/svg%3E");
+            background-size: 80px 80px, 120px 120px;
+            opacity: 0.6;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                repeating-linear-gradient(
+                    45deg,
+                    transparent,
+                    transparent 2px,
+                    rgba(255,255,255,0.002) 2px,
+                    rgba(255,255,255,0.002) 4px
+                ),
+                repeating-linear-gradient(
+                    -45deg,
+                    transparent,
+                    transparent 3px,
+                    rgba(255,255,255,0.001) 3px,
+                    rgba(255,255,255,0.001) 6px
+                );
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        .main-title {
+            font-size: 4.5rem;
+            font-weight: 900;
+            text-align: left;
+            margin-bottom: 0;
+            letter-spacing: 3px;
+            position: relative;
+            z-index: 2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #4ade80;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-left: 2px;
+            margin-bottom: 40px;
+        }
+        
+        .paper-card {
+            background: white;
+            color: #333;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            position: relative;
+            margin-bottom: 25px;
+            transform: rotate(-1deg);
+            transition: transform 0.3s ease;
+        }
+        
+        .paper-card:nth-child(even) {
+            transform: rotate(1deg);
+        }
+        
+        .paper-card:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
+        
+        .paper-card::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 20px;
+            width: 50px;
+            height: 25px;
+            background: #e5e7eb;
+            border-radius: 10px 10px 3px 3px;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .paper-card::after {
+            content: '';
+            position: absolute;
+            top: -8px;
+            right: 30px;
+            width: 50px;
+            height: 25px;
+            background: #e5e7eb;
+            border-radius: 10px 10px 3px 3px;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #333;
+            font-style: italic;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 3px solid #f3f4f6;
+        }
+        
+        .qr-code {
+            width: 80px;
+            height: 80px;
+            margin-top: 10px;
+        }
+        
+        .barcode {
+            width: 100%;
+            height: 30px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 30'%3E%3Cg fill='%23000'%3E%3Crect x='2' y='0' width='1' height='30'/%3E%3Crect x='6' y='0' width='2' height='30'/%3E%3Crect x='11' y='0' width='1' height='30'/%3E%3Crect x='15' y='0' width='3' height='30'/%3E%3Crect x='21' y='0' width='1' height='30'/%3E%3Crect x='25' y='0' width='2' height='30'/%3E%3Crect x='30' y='0' width='1' height='30'/%3E%3Crect x='34' y='0' width='3' height='30'/%3E%3Crect x='40' y='0' width='1' height='30'/%3E%3Crect x='44' y='0' width='2' height='30'/%3E%3Crect x='49' y='0' width='1' height='30'/%3E%3Crect x='53' y='0' width='3' height='30'/%3E%3Crect x='59' y='0' width='1' height='30'/%3E%3Crect x='63' y='0' width='2' height='30'/%3E%3Crect x='68' y='0' width='1' height='30'/%3E%3Crect x='72' y='0' width='3' height='30'/%3E%3Crect x='78' y='0' width='1' height='30'/%3E%3Crect x='82' y='0' width='2' height='30'/%3E%3Crect x='87' y='0' width='1' height='30'/%3E%3Crect x='91' y='0' width='3' height='30'/%3E%3Crect x='97' y='0' width='1' height='30'/%3E%3Crect x='101' y='0' width='2' height='30'/%3E%3Crect x='106' y='0' width='1' height='30'/%3E%3Crect x='110' y='0' width='3' height='30'/%3E%3Crect x='116' y='0' width='1' height='30'/%3E%3Crect x='120' y='0' width='2' height='30'/%3E%3Crect x='125' y='0' width='1' height='30'/%3E%3Crect x='129' y='0' width='3' height='30'/%3E%3Crect x='135' y='0' width='1' height='30'/%3E%3Crect x='139' y='0' width='2' height='30'/%3E%3Crect x='144' y='0' width='1' height='30'/%3E%3Crect x='148' y='0' width='3' height='30'/%3E%3Crect x='154' y='0' width='1' height='30'/%3E%3Crect x='158' y='0' width='2' height='30'/%3E%3Crect x='163' y='0' width='1' height='30'/%3E%3Crect x='167' y='0' width='3' height='30'/%3E%3Crect x='173' y='0' width='1' height='30'/%3E%3Crect x='177' y='0' width='2' height='30'/%3E%3Crect x='182' y='0' width='1' height='30'/%3E%3Crect x='186' y='0' width='3' height='30'/%3E%3Crect x='192' y='0' width='1' height='30'/%3E%3Crect x='196' y='0' width='2' height='30'/%3E%3C/g%3E%3C/svg%3E") no-repeat center;
+            background-size: contain;
+            margin-top: 15px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .skill-item {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            font-weight: 700;
+            color: #333;
+        }
+        
+        .skill-item.html { border-color: #e34c26; color: #e34c26; }
+        .skill-item.css { border-color: #1572b6; color: #1572b6; }
+        .skill-item.js { border-color: #f7df1e; color: #333; background: #f7df1e; }
+        .skill-item.python { border-color: #3776ab; color: #3776ab; }
+        
+        .decorative-text {
+            position: absolute;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 2;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .decorative-text::before {
+            content: '';
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, rgba(255,255,255,0.8), rgba(255,255,255,0.3));
+            display: block;
+            position: relative;
+        }
+        
+        .decorative-text::after {
+            content: '▼';
+            font-size: 1rem;
+            color: rgba(255,255,255,0.8);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        }
+        
+        .about-me {
+            top: 180px;
+            left: 100px;
+        }
+        
+        .experience-text {
+            top: 180px;
+            right: 100px;
+        }
+        
+        .profession-text {
+            bottom: 300px;
+            left: 100px;
+        }
+        
+        .profession-text::after {
+            content: '▲';
+        }
+        
+        .skills-text {
+            bottom: 120px;
+            right: 100px;
+        }
+        
+        .skills-text::after {
+            content: '▲';
+        }
+        
+        .wavy-line {
+            width: 100px;
+            height: 20px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20'%3E%3Cpath d='M0 10 Q25 0 50 10 T100 10' stroke='white' stroke-width='2' fill='none'/%3E%3C/svg%3E") no-repeat center;
+            background-size: contain;
+            margin: 20px auto;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
