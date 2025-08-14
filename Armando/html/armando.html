@@ -1,161 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulación YouTube</title>
-    <style>
-        /* Resetear márgenes y bordes */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-
-        header {
-            background-color: #ff0000;
-            padding: 10px 20px;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header .logo {
-            font-size: 30px;
-            font-weight: bold;
-        }
-
-        header .search-container {
-            display: flex;
-            align-items: center;
-        }
-
-        header .search-container input {
-            padding: 8px;
-            margin-right: 10px;
-            border: none;
-            border-radius: 3px;
-            width: 300px;
-        }
-
-        header .search-container button {
-            padding: 8px 15px;
-            background-color: #333;
-            color: white;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-
-        .main-content {
-            display: flex;
-            padding: 20px;
-        }
-
-        .sidebar {
-            width: 200px;
-            margin-right: 20px;
-        }
-
-        .sidebar ul {
-            list-style-type: none;
-        }
-
-        .sidebar ul li {
-            padding: 10px;
-            cursor: pointer;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .sidebar ul li:hover {
-            background-color: #f1f1f1;
-        }
-
-        .video-container {
-            flex-grow: 1;
-        }
-
-        .video-card {
-            background-color: white;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .video-card img {
-            width: 100%;
-            border-radius: 5px;
-        }
-
-        .video-card .video-info {
-            padding: 15px;
-        }
-
-        .video-card .video-info h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .video-card .video-info p {
-            color: #555;
-        }
-
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoja de Vida — Armando Pérez</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-
-    <header>
-        <div class="logo">YouTube</div>
-        <div class="search-container">
-            <input type="text" placeholder="Buscar...">
-            <button>Buscar</button>
-        </div>
-    </header>
-
-    <div class="main-content">
-        <div class="sidebar">
-            <ul>
-                <li>Inicio</li>
-                <li>Tendencias</li>
-                <li>Suscripciones</li>
-                <li>Biblioteca</li>
-                <li>Historial</li>
-                <li>Videos guardados</li>
-                <li>Ver más</li>
-            </ul>
-        </div>
-
-        <div class="video-container">
-            <div class="video-card">
-                <img src="https://via.placeholder.com/800x450" alt="Video 1">
-                <div class="video-info">
-                    <h3>Video de prueba 1</h3>
-                    <p>Publicado hace 3 días - 100k vistas</p>
-                </div>
-            </div>
-            <div class="video-card">
-                <img src="https://via.placeholder.com/800x450" alt="Video 2">
-                <div class="video-info">
-                    <h3>Video de prueba 2</h3>
-                    <p>Publicado hace 5 días - 50k vistas</p>
-                </div>
-            </div>
-            <div class="video-card">
-                <img src="https://via.placeholder.com/800x450" alt="Video 3">
-                <div class="video-info">
-                    <h3>Video de prueba 3</h3>
-                    <p>Publicado hace 1 semana - 200k vistas</p>
-                </div>
-            </div>
-        </div>
+<body class="bg-light">
+  <div class="container py-4">
+    <!-- Encabezado -->
+    <div class="row mb-4 align-items-center bg-white rounded shadow-sm p-3">
+      <div class="col-md-3 text-center">
+        <img src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIwcGVyZmlsfGVufDB8fDB8fHww" alt="Foto de perfil" class="img-fluid rounded-circle mb-2" style="max-width:120px;">
+      </div>
+      <div class="col-md-9">
+        <h1 class="fw-bold mb-1">Armando Pérez</h1>
+        <h5 class="text-uppercase text-muted mb-2">Ingeniero de Sistemas</h5>
+        <p class="mb-0"><small class="text-muted">19 años • Barranquilla, Colombia</small></p>
+      </div>
     </div>
 
+    <div class="row">
+      <!-- Columna Izquierda -->
+      <div class="col-md-4">
+        <!-- Contacto -->
+        <div class="bg-white rounded shadow-sm p-3 mb-3">
+          <h6 class="section-title">Contacto</h6>
+          <div class="contact-item">📞 (320) 586 0930</div>
+          <div class="contact-item">✉️ armando08@gmail.com</div>
+          <div class="contact-item">📍 Carrera 17 #18-50, Barranquilla</div>
+        </div>
+
+        <!-- Habilidades Técnicas -->
+        <div class="bg-white rounded shadow-sm p-3 mb-3">
+          <h6 class="section-title">Habilidades Técnicas</h6>
+          <span class="badge bg-primary skill-badge">Java</span>
+          <span class="badge bg-primary skill-badge">Python</span>
+          <span class="badge bg-primary skill-badge">React JS</span>
+          <span class="badge bg-primary skill-badge">HTML/CSS/JS</span>
+          <span class="badge bg-primary skill-badge">R Studio</span>
+          <span class="badge bg-primary skill-badge">Power BI</span>
+        </div>
+
+        <!-- Habilidades Blandas -->
+        <div class="bg-white rounded shadow-sm p-3 mb-3">
+          <h6 class="section-title">Habilidades Blandas</h6>
+          <span class="badge bg-secondary skill-badge">Resolución de problemas</span>
+          <span class="badge bg-secondary skill-badge">Trabajo en equipo</span>
+          <span class="badge bg-secondary skill-badge">Adaptabilidad</span>
+          <span class="badge bg-secondary skill-badge">Creatividad</span>
+          <span class="badge bg-secondary skill-badge">Gestión del tiempo</span>
+        </div>
+
+        <!-- Idiomas -->
+        <div class="bg-white rounded shadow-sm p-3 mb-3">
+          <h6 class="section-title">Idiomas</h6>
+          <div class="mb-2"><img src="https://cdn.jsdelivr.net/gh/hjnilsson/country-flags/svg/es.svg" alt="Español" width="20" style="vertical-align:middle;"> <strong>Español</strong> <small class="text-muted">(Nativo)</small></div>
+          <div class="mb-2"><img src="https://cdn.jsdelivr.net/gh/hjnilsson/country-flags/svg/gb.svg" alt="Inglés" width="20" style="vertical-align:middle;"> <strong>Inglés</strong> <small class="text-muted">(B2)</small></div>
+          <div><img src="https://cdn.jsdelivr.net/gh/hjnilsson/country-flags/svg/fr.svg" alt="Francés" width="20" style="vertical-align:middle;"> <strong>Francés</strong> <small class="text-muted">(B2)</small></div>
+        </div>
+
+        <!-- Pasatiempos -->
+        <div class="bg-white rounded shadow-sm p-3">
+          <h6 class="section-title">Intereses</h6>
+          <div class="small">
+            <div>🎹 Piano</div>
+            <div>📚 Lectura</div>
+            <div>♟️ Ajedrez</div>
+            <div>🌍 Idiomas</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna Derecha -->
+      <div class="col-md-8">
+        <!-- Perfil -->
+        <div class="bg-white rounded shadow-sm p-3 mb-3">
+          <h6 class="section-title">Perfil Profesional</h6>
+          <p class="mb-0">Soy capaz de adaptarme fácilmente a cualquier ambiente de trabajo y trabajar de forma conjunta. Además, los retos se consideran una parte esencial de mi  personalidad, siempre trato de dar lo mejor de mí y dar con soluciones innovadoras, por lo tanto, no es sorpresa que una de mis facetas sea la perseverancia, es decir, nunca rendirme hasta dar con mi objetivo.</p>
+        </div>
+
+        <!-- Formación Académica -->
+        <div class="bg-white rounded shadow-sm p-3 mb-3">
+          <h6 class="section-title">Formación Académica</h6>
+          <div class="mb-3">
+            <div class="fw-bold">Ingeniería de Sistemas</div>
+            <div class="text-muted small">Universidad Libre seccional Barranquilla</div>
+            <div class="text-muted small">2023 - En curso</div>
+          </div>
+          <div>
+            <div class="fw-bold">Bachiller Académico</div>
+            <div class="text-muted small">IED Fundación Pies Descalzos</div>
+            <div class="text-muted small">2017 - 2022</div>
+          </div>
+        </div>
+
+        <!-- Certificaciones -->
+        <div class="bg-white rounded shadow-sm p-3">
+          <h6 class="section-title">Certificaciones y Cursos</h6>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-2">
+                <div class="fw-bold small">Python Essentials 1</div>
+                <div class="text-muted small">CISCO Networking Academy (2024)</div>
+              </div>
+              <div class="mb-2">
+                <div class="fw-bold small">Análisis de Datos Básico</div>
+                <div class="text-muted small">Universidad Libre (2024)</div>
+              </div>
+              <div class="mb-2">
+                <div class="fw-bold small">French Intermediate B1-B2</div>
+                <div class="text-muted small">Institut Polytechnique de Paris (2024)</div>
+              </div>
+              <div class="mb-2">
+                <div class="fw-bold small">Francés A1-B2</div>
+                <div class="text-muted small">Alianza Canadiense (2023-En curso)</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-2">
+                <div class="fw-bold small">Seguridad y Salud en el Trabajo</div>
+                <div class="text-muted small">Corp. Técnica de Estudios (2022)</div>
+              </div>
+              <div class="mb-2">
+                <div class="fw-bold small">English Dot Works 9</div>
+                <div class="text-muted small">SENA (2022)</div>
+              </div>
+              <div class="mb-2">
+                <div class="fw-bold small">English Dot Works 4</div>
+                <div class="text-muted small">SENA (2020)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-muted small py-3 mt-3">
+      © <span id="year">2025</span> Armando de Jesús Pérez Bolívar
+    </footer>
+  </div>
 </body>
 </html>
