@@ -1,0 +1,68 @@
+/* Paleta de colores de la Universidad Libre */
+:root {
+    --unilibre-red: #D40026;
+    --unilibre-gold: #FDB913;
+    --unilibre-black: #231F20;
+    --unilibre-white: #FFFFFF;
+}
+
+/* Tipografía y fondo general */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente limpia para el cuerpo */
+    /* Fondo claro con patrón sutil */
+    background-color: #949494;
+    
+    color: var(--unilibre-black);
+}
+
+/* Tipografía elegante para todos los títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family:  serif;
+}
+
+/* Estilo del encabezado principal */
+.main-title {
+    color: var(--unilibre-black);
+    font-weight: 700;
+}
+
+/* Estilo mejorado para las tarjetas */
+.card {
+    border: 1px solid #e0e0e0; /* Un borde muy sutil */
+    border-top: 5px solid var(--unilibre-red);
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+    background-color: var(--unilibre-white); /* Fondo sólido blanco para máxima legibilidad */
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.06);
+}
+
+.card-title {
+    color: var(--unilibre-red);
+    font-weight: 700;
+}
+
+/* Estilo unificado para los botones */
+.btn-unilibre {
+    background-color: var(--unilibre-gold);
+    border: 2px solid var(--unilibre-gold);
+    color: var(--unilibre-black);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 10px; /* Botones más redondeados y modernos */
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-unilibre:hover {
+    background-color: #e5a80b;
+    border-color: #e5a80b;
+    color: var(--unilibre-black);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(253, 185, 19, 0.4);
+}
