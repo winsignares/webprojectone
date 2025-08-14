@@ -1,0 +1,106 @@
+/* Yo: Scroll suave para que los enlaces href="#seccion" funcionen */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Yo: Compensa el navbar fijo */
+}
+
+/* Yo: Espaciado para que el navbar no tape el contenido */
+section {
+  scroll-margin-top: 100px;
+}
+
+/* Yo: Paleta de colores para desarrollador backend */
+:root {
+  --primary: #0d6efd;
+  --warning: #ffc107;
+  --dark: #212529;
+  --gradient-bg: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #0f2027 100%);
+}
+
+/* Yo: Hero section con gradiente oscuro para look profesional */
+.hero-section {
+  min-height: 100vh;
+  padding-top: 76px;
+  background: var(--gradient-bg);
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='9' cy='9' r='2'/%3E%3Ccircle cx='49' cy='49' r='2'/%3E%3Ccircle cx='29' cy='29' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.1;
+  pointer-events: none; /* Yo: Permite que los clics pasen a través del patrón de fondo */
+}
+
+/* Yo: Efectos hover para las tarjetas de proyectos */
+.project-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Yo: Navbar con fondo sólido para mejor contraste */
+.navbar-dark {
+  background: rgba(33, 37, 41, 0.98) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* Yo: Mejoras de tipografía para portafolio técnico */
+h1, h2, h3, h4, h5 {
+  letter-spacing: 0.3px;
+  font-weight: 600;
+}
+
+/* Yo: Badges personalizados para tecnologías */
+.badge {
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+/* Yo: Botones con mejor accesibilidad */
+.btn {
+  letter-spacing: 0.3px;
+  font-weight: 500;
+}
+
+.btn:focus, .btn:focus-visible {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Yo: Cards con bordes sutiles */
+.card {
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Yo: Imagen de perfil con efecto sutil */
+.rounded-circle {
+  transition: transform 0.3s ease;
+}
+
+.rounded-circle:hover {
+  transform: scale(1.02);
+}
+
+/* Yo: Smoothe scroll para navegación */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Yo: Espaciado consistente para secciones */
+section {
+  scroll-margin-top: 80px;
+}

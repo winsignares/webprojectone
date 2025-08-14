@@ -1,24 +1,552 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portafolio Backend | Jairo Arcia</title>
+    <meta name="description" content="Desarrollador Backend especializado en Python, Java y C# con experiencia en APIs, bases de datos y cloud computing." />
+    <!-- Yo: Si cambio la estructura de carpetas, debo actualizar estas rutas -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./statics/css/style.css" />
+  </head>
 
-    <header>
-        <h1>Jairo Arcia</h1>
-    </header>
+  <!-- Yo: ScrollSpy ajustado para que los enlaces href funcionen -->
+  <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100" tabindex="0">
+    <!-- Navbar -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+      <div class="container">
+        <!-- Yo: Mi alias como desarrollador -->
+        <a class="navbar-brand fw-bold" href="#inicio">
+          <i class="bi bi-terminal me-1"></i>Curcolor
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="#stack">Stack</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <main>
-        
+      <!-- Hero / Inicio -->
+      <section id="inicio" class="hero-section d-flex align-items-center">
+        <div class="container py-5">
+          <div class="row align-items-center g-4">
+            <div class="col-12 col-lg-7 text-white">
+              <!-- Yo: Mi nombre real y especialización -->
+              <h1 class="display-4 fw-bold mb-3">
+                Hola, soy <span class="text-warning">Jairo Arcia</span>
+              </h1>
+              <h2 class="h4 mb-4 text-light">
+                <i class="bi bi-code-slash me-2"></i>Desarrollador Backend | Estudiante Ing. Sistemas
+              </h2>
+              <!-- Yo: Mi enfoque actual como desarrollador -->
+              <p class="lead mb-4 text-light">
+                Especializado en <strong>Python</strong>, <strong>Java</strong> y <strong>C#</strong>. 
+                Construyo APIs robustas, sistemas de gestión y aplicaciones web escalables. 
+                Siempre buscando aprender nuevas tecnologías para crecer profesionalmente.
+              </p>
+              <!-- Yo: Botones de acción en el hero -->
+              <div class="d-flex flex-wrap gap-2">
+                <a href="#proyectos" class="btn btn-warning btn-lg">
+                  <i class="bi bi-folder2-open me-2"></i>Ver proyectos
+                </a>
+                <!-- Yo: Enlace directo a mi GitHub -->
+                <a href="https://github.com/Curcolor" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener">
+                  <i class="bi bi-github me-2"></i>GitHub
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-5 text-center">
+              <!-- Yo: Mi avatar de GitHub -->
+              <img 
+                src="https://avatars.githubusercontent.com/u/98512930?s=300&v=4" 
+                class="rounded-circle shadow-lg border border-3 border-warning" 
+                alt="Jairo Arcia - Curcolor" 
+                width="280" 
+                height="280"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <p>¿Que tal? Soy Jairo Arcia.
-        </p>
+      <!-- Sobre mí -->
+      <section id="sobre-mi" class="bg-light py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <h2 class="mb-4">
+                <i class="bi bi-person-circle me-2 text-primary"></i>Sobre mí
+              </h2>
+              <!-- Yo: Mi historia personal como programador -->
+              <p>
+                Mi nombre de usuario es <strong>CursedColor</strong>, pero mi nombre real es <strong>Jairo</strong>. 
+                Actualmente soy estudiante de ingeniería de sistemas y programador principiante apasionado por el desarrollo backend.
+              </p>
+              <p>
+                Utilizo varios lenguajes de programación y frameworks para crear soluciones robustas. 
+                Estaré encantado de trabajar en cualquier proyecto para ganar cada vez más experiencia en la programación.
+                <span class="fw-bold">👉 ⌨️ 👈</span>
+              </p>
+              
+              <!-- Yo: Mis estadísticas reales de GitHub -->
+              <div class="row text-center mt-4">
+                <div class="col-6 col-md-3">
+                  <div class="card h-100 border-0 bg-primary text-white">
+                    <div class="card-body">
+                      <h5 class="card-title">266</h5>
+                      <small>Contribuciones</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card h-100 border-0 bg-success text-white">
+                    <div class="card-body">
+                      <h5 class="card-title">14+</h5>
+                      <small>Repositorios</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card h-100 border-0 bg-warning text-white">
+                    <div class="card-body">
+                      <h5 class="card-title">6</h5>
+                      <small>Pinned Projects</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card h-100 border-0 bg-info text-white">
+                    <div class="card-body">
+                      <h5 class="card-title">2</h5>
+                      <small>Seguidores</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stack tecnológico -->
+      <section id="stack" class="py-5">
+        <div class="container">
+          <h2 class="mb-4">
+            <i class="bi bi-stack me-2 text-primary"></i>💻 Stack Tecnológico
+          </h2>
+          
+          <!-- Yo: Mis lenguajes principales como backend developer -->
+          <div class="row g-4">
+            <div class="col-12">
+              <h4 class="h5 mb-3">🧑‍💻 Lenguajes de programación</h4>
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="badge bg-primary fs-6 p-2">
+                  <i class="bi bi-filetype-py me-1"></i>Python
+                </span>
+                <span class="badge bg-danger fs-6 p-2">
+                  <i class="bi bi-filetype-java me-1"></i>Java
+                </span>
+                <span class="badge bg-success fs-6 p-2">C#</span>
+                <span class="badge bg-warning text-dark fs-6 p-2">
+                  <i class="bi bi-filetype-js me-1"></i>JavaScript
+                </span>
+                <span class="badge bg-info fs-6 p-2">
+                  <i class="bi bi-filetype-html me-1"></i>HTML
+                </span>
+                <span class="badge bg-secondary fs-6 p-2">
+                  <i class="bi bi-filetype-css me-1"></i>CSS
+                </span>
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              <h4 class="h5 mb-3">🧩 Frameworks y librerías</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  <strong>Flask</strong> - APIs REST y web apps
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  <strong>FastAPI</strong> - APIs modernas y rápidas
+                </li>
+              </ul>
+            </div>
+            
+            <div class="col-md-6">
+              <h4 class="h5 mb-3">☁️ Cloud y servicios</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="bi bi-cloud-fill text-warning me-2"></i>
+                  <strong>AWS</strong> - Servicios en la nube
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-cloud-fill text-danger me-2"></i>
+                  <strong>Oracle Cloud</strong> - Infraestructura
+                </li>
+              </ul>
+            </div>
+            
+            <div class="col-md-6">
+              <h4 class="h5 mb-3">🗄️ Bases de datos</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="bi bi-database-fill text-primary me-2"></i>
+                  <strong>MySQL</strong> - Base de datos relacional
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-database-fill text-info me-2"></i>
+                  <strong>SQL Server</strong> - Microsoft SQL
+                </li>
+              </ul>
+            </div>
+            
+            <div class="col-md-6">
+              <h4 class="h5 mb-3">🛠️ Herramientas</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="bi bi-git text-danger me-2"></i>
+                  <strong>Git</strong> - Control de versiones
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-palette-fill text-success me-2"></i>
+                  <strong>Figma</strong> - Diseño y mockups
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-book-fill text-warning me-2"></i>
+                  <strong>MkDocs</strong> - Documentación
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyectos principales (mis repos pinned) -->
+      <section id="proyectos" class="bg-light py-5">
+        <div class="container">
+          <h2 class="mb-4">
+            <i class="bi bi-folder2-open me-2 text-primary"></i>Proyectos destacados
+          </h2>
+          <!-- Yo: Estos son mis repositorios pinned reales de GitHub -->
+          <div class="row g-4">
+            
+            <!-- WALLI_WALLET -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 project-card border-0 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="card-title">
+                      <i class="bi bi-wallet2 me-2 text-success"></i>WALLI_WALLET
+                    </h5>
+                    <span class="badge bg-primary">Python</span>
+                  </div>
+                  <p class="card-text flex-grow-1">
+                    Aplicación web completa que permite a los usuarios realizar transferencias, 
+                    depósitos, retiros y pagos de servicios. Sistema financiero robusto.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">
+                      <i class="bi bi-star-fill text-warning me-1"></i>1 star
+                    </small>
+                    <div class="d-flex gap-2">
+                      <a href="https://github.com/Curcolor/WALLI_WALLET" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">
+                        <i class="bi bi-github me-1"></i>Código
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sistema de Gestión JAVA -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 project-card border-0 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="card-title">
+                      <i class="bi bi-briefcase me-2 text-danger"></i>InkluIA Manager
+                    </h5>
+                    <span class="badge bg-danger">Java</span>
+                  </div>
+                  <p class="card-text flex-grow-1">
+                    Sistema de gestión completo en Java con NetBeans y SQL Server. 
+                    Incluye módulos para usuarios, vacantes, postulaciones y cursos.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">
+                      <i class="bi bi-layers me-1"></i>Enterprise
+                    </small>
+                    <div class="d-flex gap-2">
+                      <a href="https://github.com/Curcolor/InkluIA_ManejadorJAVA" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">
+                        <i class="bi bi-github me-1"></i>Código
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- COMMUNITY Platform -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 project-card border-0 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="card-title">
+                      <i class="bi bi-people me-2 text-info"></i>COMMUNITY
+                    </h5>
+                    <span class="badge bg-primary">Python</span>
+                  </div>
+                  <p class="card-text flex-grow-1">
+                    Plataforma que centraliza recursos de ayuda gratuita, facilitando 
+                    la colaboración y el apoyo entre personas y organizaciones.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">
+                      <i class="bi bi-star-fill text-warning me-1"></i>2 stars
+                      <i class="bi bi-diagram-3 text-info me-1 ms-2"></i>2 forks
+                    </small>
+                    <div class="d-flex gap-2">
+                      <a href="https://github.com/Curcolor/COMMUNITY" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">
+                        <i class="bi bi-github me-1"></i>Código
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Vision Artificial -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 project-card border-0 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="card-title">
+                      <i class="bi bi-camera-video me-2 text-warning"></i>Vision AI Vehículos
+                    </h5>
+                    <span class="badge bg-primary">Python</span>
+                  </div>
+                  <p class="card-text flex-grow-1">
+                    Sistema de detección y seguimiento de vehículos usando Computer Vision. 
+                    Detecta automóviles, camiones, buses, motos y peatones.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">
+                      <i class="bi bi-star-fill text-warning me-1"></i>1 star
+                    </small>
+                    <div class="d-flex gap-2">
+                      <a href="https://github.com/Curcolor/DemoVisonArtificialVehiculos" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">
+                        <i class="bi bi-github me-1"></i>Código
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- YouTube Downloader -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 project-card border-0 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="card-title">
+                      <i class="bi bi-download me-2 text-danger"></i>YouTube Downloader
+                    </h5>
+                    <span class="badge bg-primary">Python</span>
+                  </div>
+                  <p class="card-text flex-grow-1">
+                    Herramienta simple y efectiva para descargar videos de YouTube 
+                    en alta calidad utilizando Python y librerías especializadas.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">
+                      <i class="bi bi-star-fill text-warning me-1"></i>1 star
+                    </small>
+                    <div class="d-flex gap-2">
+                      <a href="https://github.com/Curcolor/DescargadorYoutube" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">
+                        <i class="bi bi-github me-1"></i>Código
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- INKLU-AI (Colaborativo) -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 project-card border-0 shadow-sm border-success">
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="card-title">
+                      <i class="bi bi-universal-access me-2 text-success"></i>INKLÚ AI
+                      <small class="text-success">(Colaborativo)</small>
+                    </h5>
+                    <span class="badge bg-primary">Python</span>
+                  </div>
+                  <p class="card-text flex-grow-1">
+                    Aplicación web que ayuda a personas con discapacidades a encontrar empleo, 
+                    conectándolas con empresas inclusivas y promoviendo igualdad de oportunidades.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">
+                      <i class="bi bi-people me-1"></i>Colaborativo
+                    </small>
+                    <div class="d-flex gap-2">
+                      <a href="https://github.com/JUNIORRDSR/INKLU-AI" class="btn btn-sm btn-outline-success" target="_blank" rel="noopener">
+                        <i class="bi bi-github me-1"></i>Código
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <!-- Yo: Botón para ver todos mis repositorios -->
+          <div class="text-center mt-4">
+            <a href="https://github.com/Curcolor?tab=repositories" class="btn btn-outline-primary btn-lg" target="_blank" rel="noopener">
+              <i class="bi bi-folder2-open me-2"></i>Ver todos los repositorios
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section id="contacto" class="py-5">
+        <div class="container">
+          <h2 class="mb-4">
+            <i class="bi bi-envelope me-2 text-primary"></i>Contacto
+          </h2>
+          <div class="row g-4">
+            <div class="col-lg-5">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="bi bi-person-lines-fill me-2"></i>Datos de contacto
+                  </h5>
+                  <ul class="list-unstyled mb-0">
+                    <!-- Yo: Mis redes sociales reales -->
+                    <li class="mb-3">
+                      <i class="bi bi-github text-dark me-2"></i>
+                      <strong>GitHub:</strong> 
+                      <a href="https://github.com/Curcolor" target="_blank" rel="noopener">@Curcolor</a>
+                    </li>
+                    <li class="mb-3">
+                      <i class="bi bi-linkedin text-primary me-2"></i>
+                      <strong>LinkedIn:</strong> 
+                      <a href="https://www.linkedin.com/in/jairo-andr%C3%A9s-arcia-osorio-a66525201" target="_blank" rel="noopener">Jairo Andrés Arcia Osorio</a>
+                    </li>
+                    <li class="mb-3">
+                      <i class="bi bi-twitter text-info me-2"></i>
+                      <strong>X (Twitter):</strong> 
+                      <a href="https://x.com/Curcolor" target="_blank" rel="noopener">@Curcolor</a>
+                    </li>
+                    <!-- Yo: Mi ubicación actual -->
+                    <li class="mb-3">
+                      <i class="bi bi-geo-alt text-danger me-2"></i>
+                      <strong>Ubicación:</strong> Colombia
+                    </li>
+                    <li class="mb-0">
+                      <i class="bi bi-briefcase text-warning me-2"></i>
+                      <strong>Disponibilidad:</strong> Abierto a proyectos y colaboraciones
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="bi bi-chat-square-text me-2"></i>Envíame un mensaje
+                  </h5>
+                  <!-- Yo: Formulario simple que abre el cliente de correo -->
+                  <form id="contactForm">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="name" placeholder="Tu nombre" required />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Correo electrónico</label>
+                      <input type="email" class="form-control" id="email" placeholder="tu@correo.com" required />
+                    </div>
+                    <div class="mb-3">
+                      <label for="subject" class="form-label">Asunto</label>
+                      <select class="form-select" id="subject" required>
+                        <option value="">Selecciona un asunto</option>
+                        <option value="Propuesta de proyecto">Propuesta de proyecto</option>
+                        <option value="Colaboración">Colaboración</option>
+                        <option value="Consulta técnica">Consulta técnica</option>
+                        <option value="Otro">Otro</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="message" class="form-label">Mensaje</label>
+                      <textarea class="form-control" id="message" rows="4" placeholder="Cuéntame sobre tu proyecto o consulta" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                      <i class="bi bi-send me-2"></i>Enviar mensaje
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-        
 
+    <footer class="py-4 bg-dark text-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <!-- Yo: El año se actualiza automáticamente -->
+            <small>© <span id="year"></span> Jairo Arcia (Curcolor). Todos los derechos reservados.</small>
+          </div>
+          <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+            <!-- Yo: Enlaces rápidos a mis redes principales -->
+            <a href="https://github.com/Curcolor" class="text-white me-3" target="_blank" rel="noopener">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jairo-andr%C3%A9s-arcia-osorio-a66525201" class="text-white me-3" target="_blank" rel="noopener">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://x.com/Curcolor" class="text-white" target="_blank" rel="noopener">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./statics/js/app.js"></script>
+  </body>
 </html>
