@@ -1,0 +1,115 @@
+/* css/style.css */
+
+/* Definimos tus colores para usarlos fácilmente */
+:root {
+  --main-blue: #13235e;
+  --main-purple: #5b0672;
+  --light-purple: #e2cef6;
+  --badge-gray: #f3f3f3;
+}
+
+/* Estilos generales del cuerpo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-purple);
+  color: var(--main-blue);
+}
+
+/* Barra de navegación y Pie de página */
+.bg-custom-dark {
+  background-color: var(--main-blue) !important;
+}
+
+/* Sección Hero */
+.hero-section {
+  background: linear-gradient(90deg, var(--main-blue) 60%, var(--main-purple) 100%);
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  color: #fff;
+  animation: gradientMove 2s linear infinite alternate;
+}
+.hero-section .display-5 {
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+/* pa q se mueva el color ese*/
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+/* Títulos de las secciones */
+.section-title,
+.card-title {
+  color: var(--main-blue);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Botón principal */
+.btn-custom-primary {
+  background-color: var(--main-blue);
+  border-color: var(--main-blue);
+  color: #fff;
+  font-weight: 500;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+.btn-custom-primary:hover {
+  background-color: var(--main-purple);
+  border-color: var(--main-purple);
+  color: #fff;
+}
+
+/* Tarjetas de Proyecto */
+.card {
+  border: none;
+  box-shadow: 0 4px 24px rgba(19,35,94,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 18px;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 32px rgba(19,35,94,0.15);
+}
+.card .card-title {
+  font-size: 1.3rem;
+}
+.card .card-text {
+  color: var(--main-blue);
+}
+
+/* Imagen de la tarjeta */
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 18px 18px 0 0;
+}
+
+/* Badges de tecnologías */
+.badge {
+  background-color: var(--badge-gray);
+  color: var(--main-blue);
+  font-weight: 500;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  font-size: 0.95em;
+  border-radius: 8px;
+  padding: 0.5em 0.8em;
+}
+
+/* Sección proyectos */
+#projects {
+  background-color: var(--light-purple);
+}
+
+/* Footer */
+footer {
+  background-color: var(--main-blue);
+  color: #fff;
+  letter-spacing: 1px;
+}

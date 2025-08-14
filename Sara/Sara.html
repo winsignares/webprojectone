@@ -1,14 +1,129 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="es">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>SARA SIERRA</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="css/styles.css">
+  
+  
+  <title>Mi portafolio</title>
 </head>
+
 <body>
-    
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Mi portafolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section text-center p-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Hola, mi nombre es Sara Sierra</h1>
+      <p class="lead">Una <b>estudiante</b> de ingeniería de sistemas que te ayuda a crear experiencias de usuario intuitivas y eficientes.</p>
+    </div>
+  </section>
+
+  <section id="about" class="container py-5">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="img/mujer.png" alt="Sara Sierra"  style="max-height: 260px;">
+      </div>
+      <div class="col-md-8 text-start">
+        <h2 class="section-title mb-4">Sobre Mí</h2>
+        <p class="lead">
+          Soy <b>estudiante</b> de sexto semestre de Ingeniería de Sistemas en la Universidad Libre de Barranquilla, apasionada por la intersección entre la tecnología y las personas. Para lograrlo, utilizo las herramientas fundamentales del desarrollo web como <b>HTML</b>, <b>CSS</b> y <b>JavaScript</b>. Actualmente, estoy expandiendo mis habilidades de manera activa, aprendiendo <b>Bootstrap</b> para agilizar el diseño responsivo, así como <b>Python</b> y <b>Java</b> para adentrarme en el desarrollo de soluciones más complejas. Mi objetivo es unirme a un equipo donde pueda aplicar mis conocimientos y seguir este camino de aprendizaje para crear productos que la gente ame utilizar.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col text-center">
+          <h2 class="section-title">Mis Proyectos</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5 mb-4">
+          <div class="card h-100">
+            <img src="img/wally.jpg" class="card-img-top" alt="Walli Wallet">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">WALLI WALLET</h5>
+              <p class="card-text">Billetera digital que simplifica la gestión financiera. Integra operaciones esenciales con un asistente IA para optimizar la experiencia de usuario.</p>
+              <div class="mb-3">
+                <span class="badge text-bg-secondary">Python</span>
+                <span class="badge text-bg-secondary">Flask</span>
+                <span class="badge text-bg-secondary">Html</span>
+                <span class="badge text-bg-secondary">CSS</span>
+                <span class="badge text-bg-secondary">JavaScript</span>
+                <span class="badge text-bg-secondary">MySQL</span>
+                
+              </div>
+              <a href="https://github.com/Curcolor/WALLI_WALLET" class="btn btn-custom-primary mt-auto">Ver en GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-5 mb-4">
+          <div class="card h-100">
+            <img src="img/community.jpg" class="card-img-top" alt="CommUnity">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">CommUnity</h5>
+              <p class="card-text">Plataforma web diseñada para centralizar recursos de ayuda gratuita. Conecta a personas y organizaciones para fomentar la colaboración y el apoyo comunitario.</p>
+              <div class="mb-3">
+                <span class="badge text-bg-secondary">Python</span>
+                <span class="badge text-bg-secondary">Flask</span>
+                <span class="badge text-bg-secondary">HTML</span>
+                <span class="badge text-bg-secondary">CSS</span>
+                <span class="badge text-bg-secondary">JavaScript</span>
+                <span class="badge text-bg-secondary">SQLite</span>
+               
+              </div>
+              <a href="https://github.com/Curcolor/COMMUNITY" class="btn btn-custom-primary mt-auto">Ver en GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2 class="section-title mb-4">Hablemos</h2>
+        <p>Si mi perfil te parece interesante o quieres colaborar en un proyecto, no dudes en contactarme.</p>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+          <a href="mailto:sierrasarita026@gmail.com" class="btn btn-custom-primary btn-sm">Enviar un Correo</a>
+          <a href="https://www.linkedin.com/in/sara-sierra-oliveros-a3289a2b7/" target="_blank" class="btn btn-custom-primary btn-sm">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center text-white py-4 bg-custom-dark">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Sara Sierra. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
