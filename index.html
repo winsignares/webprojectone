@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portafolio Digital de Estudiantes - Unilibre</title>
 
-    <!-- Bootstrap CSS -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Google Fonts -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- Estilos personalizados (si tienes CSS/styles.css, se aplicará) -->
+    
     <link rel="stylesheet" href="CSS/styles.css">
 
     <style>
@@ -23,7 +23,7 @@
 
         body { 
             font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; 
-            background-color: #f0f0f0; /* Fondo gris aplicado */
+            background-color: #f0f0f0; 
         }
 
         .initial-circle {
@@ -40,7 +40,7 @@
             border: 2px solid #fff;
         }
 
-        /* Hover levitación */
+        
         .card:hover {
             transform: translateY(-8px);
             box-shadow: 0 12px 20px rgba(0,0,0,0.25);
@@ -50,7 +50,7 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* Estilos auxiliares usados en este ejemplo */
+        
         .btn-unilibre {
             background: var(--unilibre);
             color: #fff;
@@ -64,13 +64,13 @@
 
         .main-title { font-family: "Merriweather", serif; font-size: 1.6rem; margin: 0; }
 
-        /* Header logo */
+        
         .header-logo { width: 80px; height: 80px; object-fit: contain; }
 
-        /* Aside */
+        
         aside .list-unstyled a { text-decoration: none; color: inherit; }
         @media (max-width: 991px) {
-            /* Ajustes móviles: aside pasa debajo del contenido principal */
+           
             .order-md-2 { order: 2 !important; }
             .order-md-1 { order: 1 !important; }
         }
@@ -78,7 +78,7 @@
 </head>
 <body>
 
-    <!-- HEADER + NAV -->
+    
     <header class="container py-4 mb-4 border-bottom" role="banner" aria-label="Encabezado principal">
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
             <div class="d-flex align-items-center mb-3 mb-md-0">
@@ -98,14 +98,13 @@
         </div>
     </header>
 
-    <!-- MAIN: artículo principal con cards + aside -->
+   
     <main class="container" role="main">
         <div class="row g-4">
-            <!-- Article: lista de portafolios (principal, ocupa 9 columnas en lg) -->
+           
             <article class="col-lg-9 order-md-1" aria-label="Listado de portafolios">
                 <div class="row g-4">
 
-                    <!-- Cada tarjeta la envolvemos en <section> para semántica -->
                     <section class="col-lg-4 col-md-6" aria-labelledby="card-leonardo">
                         <div class="card shadow-sm card-border-red h-100">
                             <div class="card-body d-flex flex-column">
@@ -142,7 +141,7 @@
                         </div>
                     </section>
 
-                    <!-- Fila 2 -->
+                    
                     <section class="col-lg-4 col-md-6" aria-labelledby="card-nicely">
                         <div class="card shadow-sm card-border-red h-100">
                             <div class="card-body d-flex flex-column">
@@ -179,7 +178,6 @@
                         </div>
                     </section>
 
-                    <!-- Fila 3 -->
                     <section class="col-lg-4 col-md-6" aria-labelledby="card-armando">
                         <div class="card shadow-sm card-border-red h-100">
                             <div class="card-body d-flex flex-column">
@@ -216,7 +214,7 @@
                         </div>
                     </section>
 
-                    <!-- Fila 4 -->
+                   
                     <section class="col-lg-4 col-md-6" aria-labelledby="card-alejandro">
                         <div class="card shadow-sm card-border-red h-100">
                             <div class="card-body d-flex flex-column">
@@ -253,7 +251,6 @@
                         </div>
                     </section>
 
-                    <!-- Fila 5 -->
                     <section class="col-lg-4 col-md-6" aria-labelledby="card-jairo-arcia">
                         <div class="card shadow-sm card-border-red h-100">
                             <div class="card-body d-flex flex-column">
@@ -290,7 +287,7 @@
                         </div>
                     </section>
 
-                    <!-- Fila 6 -->
+                  
                     <section class="col-lg-4 col-md-6" aria-labelledby="card-jorge">
                         <div class="card shadow-sm card-border-red h-100">
                             <div class="card-body d-flex flex-column">
@@ -330,7 +327,7 @@
                 </div>
             </article>
 
-            <!-- ASIDE: barra lateral con elementos útiles (ENLACES RÁPIDOS ELIMINADOS) -->
+           
             <aside class="col-lg-3 order-md-2">
                 <div class="bg-light p-3 rounded sticky-top" style="top:1rem;">
                     <h6>Buscar portafolio</h6>
@@ -345,15 +342,15 @@
         </div>
     </main>
 
-    <!-- FOOTER -->
+    
     <footer class="container text-center py-4 border-top mt-5" role="contentinfo">
         <p class="mb-0">&copy; 2025 Universidad Libre - Portafolio Digital</p>
     </footer>
 
-    <!-- Bootstrap JS -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Script simple para filtrar por nombre (client-side) -->
+    
     <script>
         (function(){
             const input = document.getElementById('filterInput');
