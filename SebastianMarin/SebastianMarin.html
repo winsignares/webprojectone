@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hoja de Vida – Sebastian Marin</title>
+  <meta name="description" content="Plantilla de hoja de vida interactiva y animada en una sola página HTML." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand"><span class="dot"></span> <span>Sebastian</span></div>
+        <div class="links">
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#educacion">Educación</a>
+          <a href="#experiencia">Experiencia</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div style="display:flex; gap:8px">
+          <button class="btn-ghost" id="themeToggle" title="Cambiar tema">🌗</button>
+          <a class="btn" id="printBtn" href="#">🖨️ Descargar PDF</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <div class="chip reveal">Disponible para prácticas / freelance</div>
+        <h1 class="reveal" style="transition-delay:.05s">Desarrollador en formación · Ingeniería de Sistemas</h1>
+        <p class="subtitle reveal" style="transition-delay:.1s">
+          Soy <strong>Sebastian Marin</strong> (23). Estudio Ingeniería de Sistemas en la <strong>Universidad Libre</strong> (Barranquilla/Soledad). Me gusta construir apps web, jugar videojuegos y salir con mis amigos. Actualmente exploro <strong>React</strong>, <strong>árboles de decisión</strong> y <strong>Go</strong>. 
+        </p>
+        <div class="reveal" style="display:flex; gap:10px; margin-top:12px; transition-delay:.16s">
+          <a class="btn" href="#contacto">📩 Contáctame</a>
+          <a class="btn-ghost" href="#proyectos">👀 Ver proyectos</a>
+        </div>
+      </div>
+      <img class="photo reveal" src="498025732_1785385079080178_827014928381162723_n.jpg"/>
+    </section>
+
+    <!-- QUICK STATS CARDS -->
+    <section class="grid cols-3" aria-label="Resumen rápido">
+      <article class="card reveal" style="transition-delay:.05s">
+        <div style="font-weight:700; font-size:18px">🎯 Objetivo</div>
+        <p style="margin:8px 0 0">Primer empleo/Práctica en desarrollo web front-end o full‑stack junior.</p>
+      </article>
+      <article class="card reveal" style="transition-delay:.1s">
+        <div style="font-weight:700; font-size:18px">📍 Ubicación</div>
+        <p style="margin:8px 0 0">Barranquilla – Soledad, Colombia (disponible remoto).</p>
+      </article>
+      <article class="card reveal" style="transition-delay:.16s">
+        <div style="font-weight:700; font-size:18px">🌐 Idiomas</div>
+        <p style="margin:8px 0 0">Español nativo · Ingles nivel básico en curso (Duolingo)</p>
+      </article>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobre-mi" class="grid cols-2" style="margin-top:24px">
+      <article class="card reveal">
+        <h2 style="margin:0 0 8px; font-family:Space Grotesk, Inter, sans-serif">Sobre mí</h2>
+        <p>
+          Me gusta aprender construyendo. Últimamente trabajo en un proyecto <em>React</em> para crear árboles de decisión dinámicos e interactivos. También estoy practicando <em>Go</em> y mejorando dibujos estilo manga con un flujo “Mejorita al digital”.
+        </p>
+        <ul style="margin:8px 0 0; padding-left:18px">
+          <li>Aprendo rápido y explico sencillo.</li>
+          <li>Me gustan los retos prácticos y el trabajo en equipo.</li>
+          <li>Busco mejorar cada semana con proyectos pequeños.</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <h3 style="margin:0 0 8px">Datos de contacto (ejemplo)</h3>
+        <p style="margin:6px 0">📧 <a href="mailto:kenny@example.com">sebastian-marinh@unilibre.edu.co</a></p>
+        <p style="margin:6px 0">📱 +57 319 208 8087</p>
+        <p style="margin:6px 0">💼 <a href="#">linkedin.com/in/SebastiaMarinH</a></p>
+        <p style="margin:6px 0">🧰 <a href="#">github.com/sebastianmarinhenriquez</a></p>
+      </article>
+    </section>
+
+    <!-- EDUCACION & EXPERIENCIA -->
+    <section class="grid cols-2" id="educacion" style="margin-top:24px">
+      <article class="card reveal">
+        <h2 style="margin:0 0 10px; font-family:Space Grotesk, Inter, sans-serif">Educación</h2>
+        <div class="timeline">
+          <div class="event">
+            <h4 style="margin:0">Universidad Libre – Ingeniería de Sistemas</h4>
+            <div style="color:var(--muted); font-size:14px">2021 – Presente · Barranquilla</div>
+            <p style="margin:6px 0">Énfasis en desarrollo de software, redes y bases de datos.</p>
+          </div>
+          <div class="event">
+            <h4 style="margin:0">Colegio Metropoliado de Soledad 2000 – Bachiller</h4>
+            <div style="color:var(--muted); font-size:14px">2017 – Cursado · Soledad</div>
+            <p style="margin:6px 0"></p>
+          </div>
+          <div class="event">
+            <h4 style="margin:0">Formación adicional</h4>
+            <div style="color:var(--muted); font-size:14px">Autoaprendizaje continuo</div>
+            <p style="margin:6px 0">React, JS moderno, Go, Git/GitHub, fundamentos de UI/UX.</p>
+          </div>
+        </div>
+      </article>
+      <article class="card reveal" id="experiencia">
+        <h2 style="margin:0 0 10px; font-family:Space Grotesk, Inter, sans-serif">Experiencia</h2>
+        <div class="timeline">
+          <div class="event">
+            <h4 style="margin:0">Proyectos universitarios & personales</h4>
+            <div style="color:var(--muted); font-size:14px">2023 – 2025</div>
+            <p style="margin:6px 0">Aplicaciones web en React, scripts en Python, prácticas con APIs REST, y prototipos de manga con IA.</p>
+          </div>
+          <div class="event">
+            <h4 style="margin:0">Soporte tech a compañeros</h4>
+            <div style="color:var(--muted); font-size:14px">2022 – 2025</div>
+            <p style="margin:6px 0">Ayuda en control de versiones, lectura de datos en Python y solución de errores comunes.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="card reveal" style="margin-top:24px">
+      <h2 style="margin:0 0 10px; font-family:Space Grotesk, Inter, sans-serif">Proyectos destacados</h2>
+      <div class="grid cols-3">
+        <div class="project card" style="padding:12px">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop" alt="App React"/>
+          <div>
+            <div style="font-weight:700">Constructor de Árboles de Decisión</div>
+            <div style="color:var(--muted); font-size:14px">React · Recharts · Drag & Drop</div>
+            <p style="margin:6px 0">Editor visual para crear y evaluar árboles. Guardado local y exportación JSON.</p>
+          </div>
+        </div>
+        <div class="project card" style="padding:12px">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=800&auto=format&fit=crop" alt="Go"/>
+          <div>
+            <div style="font-weight:700">API REST en Go</div>
+            <div style="color:var(--muted); font-size:14px">Go · Gin · JWT</div>
+            <p style="margin:6px 0">API base con autenticación y CRUD para tareas. Pruebas unitarias.</p>
+          </div>
+        </div>
+        <div class="project card" style="padding:12px">
+          <img src="https://images.unsplash.com/photo-1541560052-77ec1bbc09f7?q=80&w=800&auto=format&fit=crop" alt="Manga"/>
+          <div>
+            <div style="font-weight:700">"Mejorita al digital" Pipeline</div>
+            <div style="color:var(--muted); font-size:14px">Manga B/N · Limpieza & Tintas</div>
+            <p style="margin:6px 0">Proceso para digitalizar bocetos sin alterar diseño ni pose: limpieza y definición del trazo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="card reveal" style="margin-top:24px">
+      <h2 style="margin:0 0 10px; font-family:Space Grotesk, Inter, sans-serif">Habilidades</h2>
+      <div class="grid cols-2">
+        <div>
+          <div class="skill"><div style="display:flex; justify-content:space-between"><span>HTML/CSS</span><span>80%</span></div><div class="bar"><span data-width="80%"></span></div></div>
+          <div class="skill"><div style="display:flex; justify-content:space-between"><span>JavaScript/React</span><span>70%</span></div><div class="bar"><span data-width="70%"></span></div></div>
+          <div class="skill"><div style="display:flex; justify-content:space-between"><span>Go</span><span>45%</span></div><div class="bar"><span data-width="45%"></span></div></div>
+        </div>
+        <div>
+          <div class="skill"><div style="display:flex; justify-content:space-between"><span>Python</span><span>65%</span></div><div class="bar"><span data-width="65%"></span></div></div>
+          <div class="skill"><div style="display:flex; justify-content:space-between"><span>Git/GitHub</span><span>14%</span></div><div class="bar"><span data-width="14%"></span></div></div>
+          <div class="skill"><div style="display:flex; justify-content:space-between"><span>UI/UX</span><span>55%</span></div><div class="bar"><span data-width="55%"></span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICACIONES / LOGROS -->
+    <section class="grid cols-3" style="margin-top:24px">
+      <article class="card reveal">
+        <div style="font-weight:700">🏆 Logro</div>
+        <p style="margin:6px 0">Top helper entre compañeros: guías paso a paso y solución de errores frecuentes.</p>
+      </article>
+      <article class="card reveal" style="transition-delay:.05s">
+        <div style="font-weight:700">🧠 Idiomas</div>
+        <p style="margin:6px 0">Dia 21 en Duolingo 🤑</p>
+      </article>
+      <article class="card reveal" style="transition-delay:.1s">
+        <div style="font-weight:700">🎮 Intereses</div>
+        <p style="margin:6px 0">Videojuegos, contenido tech en YouTube, salir con amigos.</p>
+      </article>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="card reveal" style="margin:24px 0">
+      <h2 style="margin:0 0 10px; font-family:Space Grotesk, Inter, sans-serif">Contacto</h2>
+      <form id="contactForm" style="display:grid; gap:10px">
+        <div style="display:grid; gap:8px; grid-template-columns:1fr 1fr">
+          <input name="nombre" placeholder="Tu nombre" required style="padding:12px; border-radius:12px; background:var(--surface); border:1px solid rgba(255,255,255,.08); color:var(--text)"/>
+          <input name="email" placeholder="Tu email" type="email" required style="padding:12px; border-radius:12px; background:var(--surface); border:1px solid rgba(255,255,255,.08); color:var(--text)"/>
+        </div>
+        <textarea name="mensaje" placeholder="Tu mensaje" rows="4" required style="padding:12px; border-radius:12px; background:var(--surface); border:1px solid rgba(255,255,255,.08); color:var(--text)"></textarea>
+        <div style="display:flex; gap:10px; align-items:center">
+          <button class="btn" type="submit">Enviar</button>
+          <span id="formMsg" style="color:var(--muted)"></span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- FAB buttons -->
+  <div class="fab">
+    <button class="btn" id="scrollTop">⬆️ Subir</button>
+    <button class="btn-ghost" id="cycleAccent">🎨 Cambiar color</button>
+  </div>
+
+  <script>
+    // Smooth anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}) }
+      })
+    })
+
+    // Reveal on scroll
+    const io = new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){ entry.target.classList.add('visible'); io.unobserve(entry.target) }
+      })
+    }, {threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=> io.observe(el));
+
+    // Animate skill bars when visible
+    const barIO = new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.style.width = entry.target.dataset.width;
+          barIO.unobserve(entry.target);
+        }
+      })
+    }, {threshold:.4});
+    document.querySelectorAll('.bar > span').forEach(span=> barIO.observe(span));
+
+    // Theme toggle (dark/light)
+    const themeToggle = document.getElementById('themeToggle');
+    const light = {
+      bg:'#f6f7fb', surface:'#ffffff', text:'#0b1020', muted:'#5b637a', accent:'#7c5cff', accent2:'#0ea5e9', card:'#ffffff'
+    }
+    const dark = {
+      bg:'#0b0d12', surface:'#111521', text:'#e8eefb', muted:'#9aa6bf', accent:'#7c5cff', accent2:'#2dd4bf', card:'#0f1320'
+    }
+    const applyTheme = (t) => {
+      const s = document.documentElement.style;
+      s.setProperty('--bg', t.bg); s.setProperty('--surface', t.surface); s.setProperty('--text', t.text); s.setProperty('--muted', t.muted); s.setProperty('--accent', t.accent); s.setProperty('--accent-2', t.accent2); s.setProperty('--card', t.card);
+      document.body.style.background = `radial-gradient(1200px 800px at 80% -10%, ${hexToRgba(t.accent, .25)}, transparent 60%), radial-gradient(1200px 800px at -10% 10%, ${hexToRgba(t.accent2, .15)}, transparent 60%), ${t.bg}`
+    }
+    let isLight = false;
+    themeToggle.addEventListener('click', ()=>{isLight = !isLight; applyTheme(isLight?light:dark)})
+    function hexToRgba(hex, a){
+      const h = hex.replace('#','');
+      const bigint = parseInt(h, 16);
+      const r = (bigint >> 16) & 255, g = (bigint >> 8) & 255, b = bigint & 255;
+      return `rgba(${r},${g},${b},${a})`
+    }
+
+    // Cycle accent color
+    const palette = ['#7c5cff','#22c55e','#f59e0b','#ef4444','#06b6d4','#d946ef'];
+    let pi = 0;
+    document.getElementById('cycleAccent').addEventListener('click', ()=>{
+      pi = (pi+1)%palette.length;
+      document.documentElement.style.setProperty('--accent', palette[pi]);
+    })
+
+    // Scroll to top
+    document.getElementById('scrollTop').addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}))
+
+    // Print button
+    document.getElementById('printBtn').addEventListener('click', (e)=>{ e.preventDefault(); window.print() })
+
+    // Fake form submit
+    document.getElementById('contactForm').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const msg = document.getElementById('formMsg');
+      msg.textContent = '¡Gracias! Tu mensaje fue simulado. Conecta este formulario a tu backend o usa EmailJS.';
+      setTimeout(()=> msg.textContent = '', 4000)
+      e.target.reset();
+    })
+  </script>
+</body>
+</html>
