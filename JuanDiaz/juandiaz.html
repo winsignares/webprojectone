@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV – Plantilla Clara Minimal</title>
+  <meta name="description" content="Plantilla de hoja de vida en HTML, diseño claro y minimalista, con animaciones y microinteracciones." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/JuanDiaz/css/Styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="page">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="avatar" title="Pon tu foto: reemplaza por <img src='mi-foto.jpg'> dentro de este div">
+          <img src="/JuanDiaz/Img/PerfilJuandiaz.jpg" alt="Foto"/> 
+        </div>
+        <div class="name">Juan Diaz Leon</div>
+        <div class="role">Ingeniero</div>
+        <div class="tags">
+          <span class="tag">Disponible</span>
+          <span class="tag">Remoto</span>
+          <span class="tag">Español / Inglés</span>
+        </div>
+      </div>
+
+      <nav class="snav" aria-label="Navegación">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#educacion">Educación</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="actions">
+        <button class="btn" id="printBtn">🖨️ Exportar PDF</button>
+        <button class="btn-ghost" id="theme">🌗 Cambiar tema</button>
+      </div>
+
+      <div style="margin-top:14px; color:var(--muted); font-size:14px">
+        <div>📍 Barranquilla, Colombia</div>
+        <div>📧 juanesteban12399@gmail.com</div>
+        <div>🧰 github.com/JuanDiaz3108</div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- HERO -->
+      <section class="section card">
+        <div class="blob" aria-hidden="true"></div>
+        <h1 class="h1">Hola, soy <span style="color:var(--primary)">Juan Esteban</span>. Construyo experiencias web claras y rápidas.</h1>
+        <p class="lead">Soy estudiante de 6.º semestre de Ingeniería de Sistemas, con interés en el desarrollo de software y bases de datos. Me motiva aprender y aplicar buenas prácticas en accesibilidad, rendimiento y experiencia de usuario. Busco un rol como practicante o desarrollador junior para seguir creciendo en el área de desarrollo full-stack.</p>
+      </section>
+
+      <!-- QUICK STATS -->
+      <section class="grid cols-3 section">
+        <article class="card"><div style="font-weight:700">🎯 Objetivo</div><p>Primer empleo/Práctica en desarrollo web.</p></article>
+        <article class="card"><div style="font-weight:700">🧩 Fortalezas</div><p>Comunicación clara, aprendizaje rápido, trabajo en equipo.</p></article>
+        <article class="card"><div style="font-weight:700">🌱 Actual</div><p>Aprendiendo React/TypeScript y patrones de diseño.</p></article>
+      </section>
+
+      <!-- SOBRE MI -->
+      <section id="sobre-mi" class="section grid cols-2">
+        <article class="card">
+          <h2>Sobre mí</h2>
+          <p>Soy estudiante de 6.º semestre de Ingeniería de Sistemas, apasionado por el desarrollo de software y el aprendizaje continuo. He trabajado en proyectos académicos enfocados en bases de datos y aplicaciones web, lo que me ha permitido fortalecer mis habilidades técnicas y de trabajo en equipo. Me motiva crear soluciones que aporten valor real a las personas, y en mi tiempo libre disfruto explorar nuevas tecnologías y aprender sobre diseño digital.</p>
+        </article>
+        <article class="card">
+          <h3>Contacto</h3>
+          <p>📧 juanesteban12399@gmail.com<br/>📱 +57 3016078622<br/>🧰 github.com/JuanDiaz3108</p>
+        </article>
+      </section>
+
+      <!-- HABILIDADES (estrellas) -->
+      <section id="habilidades" class="section card">
+        <h2>Habilidades</h2>
+        <div class="grid cols-3">
+          <div>
+            <div>HTML/CSS</div>
+            <div class="stars" data-score="5"></div>
+          </div>
+          <div>
+            <div>JavaScript</div>
+            <div class="stars" data-score="4"></div>
+          </div>
+          <div>
+            <div>Git/GitHub</div>
+            <div class="stars" data-score="4"></div>
+          </div>
+          <div>
+          <div>
+            <div>IA</div>
+            <div class="stars" data-score="3"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCIA (acordeón) -->
+      <section id="experiencia" class="section">
+        <h2>Experiencia</h2>
+        <details class="acc card" open>
+          <summary>Proyecto Web Projectone <span style="color:var(--muted); font-weight:400">· React + LocalStorage</span></summary>
+          <div class="inner">
+          </div>
+        </details>
+        <details class="acc card">
+          <summary>Universidad Libre <span style="color:var(--muted); font-weight:400">· GitHub Flow</span></summary>
+          <div class="inner">
+            <ul>
+              <li>Revisiones de código y resolución de conflictos.</li>
+              <li>Documentación de pasos para compañeros.</li>
+            </ul>
+          </div>
+        </details>
+      </section>
+
+      <!-- EDUCACIÓN -->
+      <section id="educacion" class="section grid cols-2">
+        <article class="card">
+          <h2>Educación</h2>
+          <div class="timeline">
+            <div class="ev"> 
+              <div style="font-weight:700">Universidad Libre - Ingenieria de Sistemas</div>
+            </div>
+            <div class="ev">
+              <div style="font-weight:700">Cuso en Talento tech - Programacion</div>
+              <div style="color:var(--muted); font-size:14px">Autodidacta</div>
+              <p>React, JS moderno, diseño, etc.</p>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <h2>Logros</h2>
+          <ul>
+            <li>Top en apoyo a compañeros.</li>
+            <li>Entrega puntual y documentación clara.</li>
+            <li>Metas mensuales de aprendizaje.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- PROYECTOS (filtrables) -->
+      <section id="proyectos" class="section card">
+     
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="section card">
+        <h2>Contacto</h2>
+        <form id="contactForm" style="display:grid; gap:10px">
+          <div style="display:grid; gap:8px; grid-template-columns:1fr 1fr">
+            <input name="nombre" placeholder="Tu nombre" required style="padding:12px; border-radius:12px; background:var(--surface); border:1px solid var(--border)">
+            <input name="email" placeholder="Tu email" type="email" required style="padding:12px; border-radius:12px; background:var(--surface); border:1px solid var(--border)">
+          </div>
+          <textarea name="mensaje" placeholder="Tu mensaje" rows="4" required style="padding:12px; border-radius:12px; background:var(--surface); border:1px solid var(--border)"></textarea>
+          <div style="display:flex; gap:10px; align-items:center">
+            <button class="btn" type="submit">Enviar</button>
+            <span id="formMsg" style="color:var(--muted)"></span>
+          </div>
+        </form>
+      </section>
+
+      <footer class="section" style="color:var(--muted); text-align:center">© <span id="year"></span> Tu Nombre. Hecho con HTML + CSS + JS.</footer>
+    </main>
+  </div>
+
+  <div class="toast" id="toast">Enviado (simulado). Conecta a tu backend o usa EmailJS.</div>
+
+  <template id="starTpl">
+    <svg class="star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .587l3.668 7.431 8.21 1.193-5.939 5.79 1.403 8.173L12 18.897l-7.342 3.877 1.403-8.173L.122 9.211l8.21-1.193z"/></svg>
+  </template>
+
+  <script>
+    // Smooth anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}) }
+      })
+    })
+
+    // Scroll progress bar
+    const progress = document.getElementById('progress');
+    const onScroll = () => {
+      const s = window.scrollY; const h = document.body.scrollHeight - window.innerHeight;
+      const w = Math.min(100, (s/h)*100);
+      progress.style.width = w + '%';
+    }
+    document.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+    // Theme toggle
+    const themeBtn = document.getElementById('theme');
+    const light = {bg:'#fbfdff', surface:'#ffffff', ink:'#0f172a', muted:'#64748b', primary:'#2563eb', accent:'#f59e0b', border:'#e5e7eb'};
+    const dark = {bg:'#0b1220', surface:'#0f172a', ink:'#e5e7eb', muted:'#94a3b8', primary:'#60a5fa', accent:'#fbbf24', border:'#1f2a44'};
+    let isLight = true;
+    const applyTheme = (t) => {
+      const r = document.documentElement;
+      r.style.setProperty('--bg', t.bg); r.style.setProperty('--surface', t.surface); r.style.setProperty('--ink', t.ink); r.style.setProperty('--muted', t.muted); r.style.setProperty('--primary', t.primary); r.style.setProperty('--accent', t.accent); r.style.setProperty('--border', t.border);
+    }
+    themeBtn.addEventListener('click', ()=>{ isLight = !isLight; applyTheme(isLight?light:dark) });
+
+    // Print
+    document.getElementById('printBtn').addEventListener('click', ()=> window.print());
+
+    // Stars render
+    const tpl = document.getElementById('starTpl');
+    document.querySelectorAll('.stars').forEach(container=>{
+      const score = Number(container.dataset.score || 0);
+      for(let i=1;i<=5;i++){
+        const node = tpl.content.firstElementChild.cloneNode(true);
+        node.style.color = i<=score ? 'var(--accent)' : '#e5e7eb';
+        container.appendChild(node);
+      }
+    })
+
+    // Projects filter
+    const chips = document.querySelectorAll('.chip');
+    const list = document.getElementById('projList');
+    chips.forEach(ch=> ch.addEventListener('click', ()=>{
+      chips.forEach(c=> c.classList.remove('active')); ch.classList.add('active');
+      const f = ch.dataset.filter;
+      list.querySelectorAll('.proj').forEach(card=>{
+        card.style.display = (f==='all' || card.dataset.tags.includes(f)) ? 'grid' : 'none';
+      })
+    }))
+
+    // Contact form (fake submit + toast)
+    const toast = document.getElementById('toast');
+    document.getElementById('contactForm').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      toast.classList.add('show');
+      setTimeout(()=> toast.classList.remove('show'), 3000);
+      e.target.reset();
+    })
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
