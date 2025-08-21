@@ -1,7 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portafolio Digital de Estudiantes - Unilibre</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Estilos personalizados (si tienes CSS/styles.css, se aplicará) -->
+    <link rel="stylesheet" href="CSS/styles.css">
+
     <style>
+        :root {
+            --unilibre: #C8102E;
+        }
+
+        body { 
+            font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; 
+            background-color: #f0f0f0; /* Fondo gris aplicado */
+        }
+
         .initial-circle {
             width: 38px;
             height: 38px;
@@ -15,247 +39,339 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.10);
             border: 2px solid #fff;
         }
+
+        /* Hover levitación */
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Estilos auxiliares usados en este ejemplo */
+        .btn-unilibre {
+            background: var(--unilibre);
+            color: #fff;
+            border: 0;
+        }
+        .btn-unilibre:hover { opacity: 0.95; }
+
+        .card-border-red   { border-top: 4px solid #dc3545; }
+        .card-border-yellow{ border-top: 4px solid #ffc107; }
+        .card-border-black { border-top: 4px solid #343a40; }
+
+        .main-title { font-family: "Merriweather", serif; font-size: 1.6rem; margin: 0; }
+
+        /* Header logo */
+        .header-logo { width: 80px; height: 80px; object-fit: contain; }
+
+        /* Aside */
+        aside .list-unstyled a { text-decoration: none; color: inherit; }
+        @media (max-width: 991px) {
+            /* Ajustes móviles: aside pasa debajo del contenido principal */
+            .order-md-2 { order: 2 !important; }
+            .order-md-1 { order: 1 !important; }
+        }
     </style>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portafolio Digital de Estudiantes - Unilibre</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Google Fonts - Tipografía Profesional -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-    <!-- Hoja de Estilos Personalizada -->
-    <link rel="stylesheet" href="CSS/styles.css">
-
 </head>
 <body>
-    <div class="container py-5">
-        <header class="d-flex justify-content-between align-items-center mb-5 pb-3 border-bottom">
-            <h1 class="main-title">Portafolio Digital de Estudiantes</h1>
-            <img src="img/universidad_libre_icono.png" 
-                 alt="Logo Universidad Libre" 
-                 class="header-logo"
-                 onerror="this.onerror=null;this.src='https://placehold.co/120x120/C8102E/FFFFFF?text=Unilibre';">
-        </header>
 
-        <div class="row g-4">
-            <!-- Fila 1 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-red">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-primary text-white">LB</span> Leonardo
-                        </h5>
-                        <p class="card-text">Portafolio personal con proyectos de desarrollo web.</p>
-                        <a href="Leonardo Barraza/barraza_leonardo.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-yellow">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-success text-white">JN</span> Juan Noguera
-                        </h5>
-                        <p class="card-text">Proyectos académicos y de programación.</p>
-                        <a href="JuanNoguera/JuanNoguera.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-black">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-secondary text-white">G</span> Gabriel
-                        </h5>
-                        <p class="card-text">Aplicaciones web y ejercicios de clase.</p>
-                        <a href="gabriel/html/gabriel.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
+    <!-- HEADER + NAV -->
+    <header class="container py-4 mb-4 border-bottom" role="banner" aria-label="Encabezado principal">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+            <div class="d-flex align-items-center mb-3 mb-md-0">
+                <img src="img/universidad_libre_icono.png"
+                     alt="Logo Universidad Libre"
+                     class="header-logo me-3"
+                     onerror="this.onerror=null;this.src='https://placehold.co/120x120/C8102E/FFFFFF?text=Unilibre';">
+                <h1 class="main-title">Portafolio Digital de Estudiantes</h1>
             </div>
 
-            <!-- Fila 2 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-red">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-info text-white">N</span> Nicely
-                        </h5>
-                        <p class="card-text">Diseños creativos y proyectos multimedia.</p>
-                        <a href="Nicely/html/NicelySmile.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-yellow">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-danger text-white">GM</span> Muñoz
-                        </h5>
-                        <p class="card-text">Proyectos de ingeniería y desarrollo.</p>
-                        <a href="Munoz_Georgy/Munoz_G.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-black">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-warning text-dark">HH</span> Harlem
-                        </h5>
-                        <p class="card-text">Aplicaciones interactivas y soluciones técnicas.</p>
-                        <a href="../webprojectone/HarlemHernandez/HarlemHernandez.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Fila 3 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-red">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-primary text-white">A</span> Armando
-                        </h5>
-                        <p class="card-text">Desarrollo frontend y diseño de interfaces.</p>
-                        <a href="Armando/html/armando.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-yellow">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-success text-white">J</span> Jeremy
-                        </h5>
-                        <p class="card-text">Portafolio con proyectos innovadores.</p>
-                        <a href="/Jeremito/html/PortJeremy.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-black">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-secondary text-white">JC</span> Juan Camilo (JuanProfe)
-                        </h5>
-                        <p class="card-text">Proyectos educativos y de docencia.</p>
-                        <a href="JuanDeHoyos/Juan_DeHoyos.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Fila 4 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-red">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-info text-white">A</span> Alejandro
-                        </h5>
-                        <p class="card-text">Desarrollo web y programación avanzada.</p>
-                        <a href="../webprojectone/Alejandrito/alejandro.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-yellow">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-danger text-white">S</span> Sara
-                        </h5>
-                        <p class="card-text">Diseño y desarrollo de aplicaciones web.</p>
-                        <a href="Sara/Sara.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-black">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-warning text-dark">DE</span> David
-                        </h5>
-                        <p class="card-text">Proyectos gaming y desarrollo técnico.</p>
-                        <a href="davidescamilla/html/davidescamilla.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Fila 5 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-red">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-primary text-white">JA</span> Jairo Arcia
-                        </h5>
-                        <p class="card-text">Portafolio destacado con proyectos especiales.</p>
-                        <a href="JairoArcia/JairoArcia.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-yellow">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-success text-white">DV</span> Daniela
-                        </h5>
-                        <p class="card-text">Proyectos creativos y desarrollo web.</p>
-                        <a href="DanielaVillaB/DanielaVilla.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-black">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-secondary text-white">JD</span> Juan Diaz
-                        </h5>
-                        <p class="card-text">Soluciones técnicas y programación.</p>
-                        <a href="../webprojectone/JuanDiaz/juandiaz.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Fila 6 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-red">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-info text-white">JS</span> Jorge Solano
-                        </h5>
-                        <p class="card-text">Estudiante invitado con proyectos especiales.</p>
-                        <a href="../webprojectone/INVITADO_jorge-solano/INVITADO_solano_jorge.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-yellow">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-danger text-white">II</span> Ian Iglesias
-                        </h5>
-                        <p class="card-text">Desarrollo web y aplicaciones interactivas.</p>
-                        <a href="../webprojectone/ian iglesias/ian.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card shadow-sm card-border-black">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title d-flex align-items-center">
-                            <span class="initial-circle bg-warning text-dark">JC</span> Jhonatan Chima
-                        </h5>
-                        <p class="card-text">Proyectos de programación y desarrollo.</p>
-                        <a href="../webprojectone/Jhonatan/Jhonatan.html" class="btn btn-unilibre">Ver Portafolio</a>
-                    </div>
-                </div>
-            </div>
+            <nav aria-label="Navegación principal">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Portafolios</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-    
+    </header>
+
+    <!-- MAIN: artículo principal con cards + aside -->
+    <main class="container" role="main">
+        <div class="row g-4">
+            <!-- Article: lista de portafolios (principal, ocupa 9 columnas en lg) -->
+            <article class="col-lg-9 order-md-1" aria-label="Listado de portafolios">
+                <div class="row g-4">
+
+                    <!-- Cada tarjeta la envolvemos en <section> para semántica -->
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-leonardo">
+                        <div class="card shadow-sm card-border-red h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-leonardo" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-primary text-white">LB</span> Leonardo
+                                </h5>
+                                <p class="card-text">Portafolio personal con proyectos de desarrollo web.</p>
+                                <a href="Leonardo Barraza/barraza_leonardo.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de Leonardo">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-juan-noguera">
+                        <div class="card shadow-sm card-border-yellow h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-juan-noguera" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-success text-white">JN</span> Juan Noguera
+                                </h5>
+                                <p class="card-text">Proyectos académicos y de programación.</p>
+                                <a href="JuanNoguera/JuanNoguera.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de Juan Noguera">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-gabriel">
+                        <div class="card shadow-sm card-border-black h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-gabriel" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-secondary text-white">G</span> Gabriel
+                                </h5>
+                                <p class="card-text">Aplicaciones web y ejercicios de clase.</p>
+                                <a href="gabriel/html/gabriel.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de Gabriel">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Fila 2 -->
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-nicely">
+                        <div class="card shadow-sm card-border-red h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-nicely" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-info text-white">N</span> Nicely
+                                </h5>
+                                <p class="card-text">Diseños creativos y proyectos multimedia.</p>
+                                <a href="Nicely/html/NicelySmile.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de Nicely">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-munoz">
+                        <div class="card shadow-sm card-border-yellow h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-munoz" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-danger text-white">GM</span> Muñoz
+                                </h5>
+                                <p class="card-text">Proyectos de ingeniería y desarrollo.</p>
+                                <a href="Munoz_Georgy/Munoz_G.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de Muñoz">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-harlem">
+                        <div class="card shadow-sm card-border-black h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-harlem" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-warning text-dark">HH</span> Harlem
+                                </h5>
+                                <p class="card-text">Aplicaciones interactivas y soluciones técnicas.</p>
+                                <a href="../webprojectone/HarlemHernandez/HarlemHernandez.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de Harlem Hernandez">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Fila 3 -->
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-armando">
+                        <div class="card shadow-sm card-border-red h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-armando" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-primary text-white">A</span> Armando
+                                </h5>
+                                <p class="card-text">Desarrollo frontend y diseño de interfaces.</p>
+                                <a href="Armando/html/armando.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de Armando">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-jeremy">
+                        <div class="card shadow-sm card-border-yellow h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-jeremy" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-success text-white">J</span> Jeremy
+                                </h5>
+                                <p class="card-text">Portafolio con proyectos innovadores.</p>
+                                <a href="/Jeremito/html/PortJeremy.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de Jeremy">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-juan-camilo">
+                        <div class="card shadow-sm card-border-black h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-juan-camilo" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-secondary text-white">JC</span> Juan Camilo (JuanProfe)
+                                </h5>
+                                <p class="card-text">Proyectos educativos y de docencia.</p>
+                                <a href="JuanDeHoyos/Juan_DeHoyos.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de Juan De Hoyos">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Fila 4 -->
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-alejandro">
+                        <div class="card shadow-sm card-border-red h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-alejandro" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-info text-white">A</span> Alejandro
+                                </h5>
+                                <p class="card-text">Desarrollo web y programación avanzada.</p>
+                                <a href="../webprojectone/Alejandrito/alejandro.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de Alejandro">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-sara">
+                        <div class="card shadow-sm card-border-yellow h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-sara" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-danger text-white">S</span> Sara
+                                </h5>
+                                <p class="card-text">Diseño y desarrollo de aplicaciones web.</p>
+                                <a href="Sara/Sara.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de Sara">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-david">
+                        <div class="card shadow-sm card-border-black h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-david" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-warning text-dark">DE</span> David
+                                </h5>
+                                <p class="card-text">Proyectos gaming y desarrollo técnico.</p>
+                                <a href="davidescamilla/html/davidescamilla.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de David Escamilla">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Fila 5 -->
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-jairo-arcia">
+                        <div class="card shadow-sm card-border-red h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-jairo-arcia" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-primary text-white">JA</span> Jairo Arcia
+                                </h5>
+                                <p class="card-text">Portafolio destacado con proyectos especiales.</p>
+                                <a href="JairoArcia/JairoArcia.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de Jairo Arcia">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-daniela">
+                        <div class="card shadow-sm card-border-yellow h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-daniela" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-success text-white">DV</span> Daniela
+                                </h5>
+                                <p class="card-text">Proyectos creativos y desarrollo web.</p>
+                                <a href="DanielaVillaB/DanielaVilla.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de Daniela Villa">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-juan-diaz">
+                        <div class="card shadow-sm card-border-black h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-juan-diaz" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-secondary text-white">JD</span> Juan Diaz
+                                </h5>
+                                <p class="card-text">Soluciones técnicas y programación.</p>
+                                <a href="../webprojectone/JuanDiaz/juandiaz.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de Juan Diaz">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Fila 6 -->
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-jorge">
+                        <div class="card shadow-sm card-border-red h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-jorge" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-info text-white">JS</span> Jorge Solano
+                                </h5>
+                                <p class="card-text">Estudiante invitado con proyectos especiales.</p>
+                                <a href="../webprojectone/INVITADO_jorge-solano/INVITADO_solano_jorge.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de Jorge Solano">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-ian">
+                        <div class="card shadow-sm card-border-yellow h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-ian" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-danger text-white">II</span> Ian Iglesias
+                                </h5>
+                                <p class="card-text">Desarrollo web y aplicaciones interactivas.</p>
+                                <a href="../webprojectone/ian iglesias/ian.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de Ian Iglesias">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-lg-4 col-md-6" aria-labelledby="card-jhonatan">
+                        <div class="card shadow-sm card-border-black h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 id="card-jhonatan" class="card-title d-flex align-items-center">
+                                    <span class="initial-circle bg-warning text-dark">JC</span> Jhonatan Chima
+                                </h5>
+                                <p class="card-text">Proyectos de programación y desarrollo.</p>
+                                <a href="../webprojectone/Jhonatan/Jhonatan.html" class="btn btn-unilibre mt-auto" aria-label="Ver portafolio de Jhonatan Chima">Ver Portafolio</a>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </article>
+
+            <!-- ASIDE: barra lateral con elementos útiles (ENLACES RÁPIDOS ELIMINADOS) -->
+            <aside class="col-lg-3 order-md-2">
+                <div class="bg-light p-3 rounded sticky-top" style="top:1rem;">
+                    <h6>Buscar portafolio</h6>
+                    <form id="searchForm" onsubmit="return false;">
+                        <div class="input-group mb-2">
+                            <input id="filterInput" type="search" class="form-control" placeholder="Buscar por nombre" aria-label="Buscar por nombre">
+                            <button id="clearFilter" class="btn btn-outline-secondary" type="button" title="Limpiar">✕</button>
+                        </div>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="container text-center py-4 border-top mt-5" role="contentinfo">
+        <p class="mb-0">&copy; 2025 Universidad Libre - Portafolio Digital</p>
+    </footer>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script simple para filtrar por nombre (client-side) -->
+    <script>
+        (function(){
+            const input = document.getElementById('filterInput');
+            const clearBtn = document.getElementById('clearFilter');
+            const sections = Array.from(document.querySelectorAll('article section'));
+
+            function filter(value) {
+                const q = value.trim().toLowerCase();
+                sections.forEach(sec => {
+                    const titleEl = sec.querySelector('.card-title');
+                    const text = titleEl ? titleEl.textContent.toLowerCase() : '';
+                    sec.style.display = text.includes(q) ? '' : 'none';
+                });
+            }
+
+            input.addEventListener('input', (e) => filter(e.target.value));
+            clearBtn.addEventListener('click', () => { input.value=''; filter(''); input.focus(); });
+        })();
+    </script>
 </body>
 </html>
